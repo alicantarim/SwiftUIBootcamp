@@ -13,4 +13,5 @@ struct MenuItem: Identifiable {
     let imageName: String
     let type: String
     let restaurantName: String
+    let descriptons: String
 }

@@ -26,7 +26,8 @@ struct MenuItemView: View {
                 Text(menuItem.type)
                     .foregroundStyle(.gray)
                 
-                Text("$0.99 Del'very Fee | 15 - 30 min")
+//                Text("$0.99 Del'very Fee | 15 - 30 min")
+                Text(menuItem.descriptons)
                     .foregroundStyle(.gray)
             }
             .font(.subheadline)
@@ -35,5 +36,5 @@ struct MenuItemView: View {
 }
 
 #Preview {
-    MenuItemView(menuItem: MenuItem(imageName: "burger", type: "American", restaurantName: "Shake Shack"))
+    MenuItemView(menuItem: MenuItem(imageName: "burger", type: "American", restaurantName: "Shake Shack", descriptons: "$5.99 Delivery Free | 15 - 30 min"))
 }

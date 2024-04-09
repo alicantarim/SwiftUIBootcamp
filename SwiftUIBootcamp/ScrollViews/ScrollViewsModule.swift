@@ -28,24 +28,25 @@ struct ScrollViewsModule: View {
         "sushi"
     ]
     var body: some View {
-        // showsIndicators ->
+        //showsIndicators -> O anda scroll'un neresinde oldugunu gosteren bar.
 //        ScrollView(showsIndicators: false) {
 //            VStack {
-//                ForEach(0...100, id: \.self) { index in
+//                ForEach(0 ... 30, id: \.self) { index in
 //                    Text("Hello, \(index)")
 //                }
 //            }
 //        }
-        
-//        ScrollView(.horizontal, showsIndicators: false) {
+//        
+//        ScrollView(.horizontal, showsIndicators: true) {
 //            HStack {
 //                ForEach(0...10, id: \.self) { index in
 //                    Rectangle()
 //                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+//                        .foregroundColor(.indigo)
 //                }
 //            }
 //        }
-        
+//        
 //        ScrollView(.horizontal, showsIndicators: false) {
 //            HStack(spacing: 10) {
 //                ForEach(driverImages, id: \.self) { image in
